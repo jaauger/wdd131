@@ -6,12 +6,13 @@
     <meta name="Description" content="">
     <meta name="author" content="Jason Auger">
     <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
     <title>WDD 131 – Dynamic Web Fundamentals – Jason Auger</title>
 </head>
 <body>
+    <div class="container">
     <header>
-        <h1><span id="course-title">WDD 131 - Dynamic Web Fundamentals</span></h1>
+        <h1><span id="course-title">WDD 131: Dynamic Web Fundamentals - Jason Auger</span></h1>
     </header>
     <nav>
         <ul>
@@ -22,25 +23,47 @@
         </ul>
     </nav>
     <main>
-        <h1>Jason Auger</h1>
-        <section class="card">
-            <h2>About Me</h2>
-        </section>
-        <section class="card">
-            <h2>Web Dev Resources</h2>
-            <ul>
-                <li><a href="#">Dev.to Community</a></li>
-                <li><a href="#">Smashing Magazine</a></li>
-                <li><a href="#">CSS Tricks</a></li>
-                <li><a href="#">W3 Schools</a></li>
-                <li><a href="#">Udemy</a></li>
-                <li><a href="#">Image Placeholder</a></li>
-            </ul>
-        </section>
+        <div class="card-holder">
+            <section class="card">
+                <div class="card-header"><h3>About Me</h3></div>
+                    <div class="about-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus possimus voluptatum impedit sequi natus non. Molestias, doloremque quos aliquid 
+                           molestiae deleniti officiis ullam, necessitatibus ratione nam error voluptas laboriosam iure?
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus possimus voluptatum impedit sequi natus non. Molestias, doloremque quos aliquid 
+                           molestiae deleniti officiis ullam, necessitatibus ratione nam error voluptas laboriosam iure?</p>
+                        <img src="images/profile-ja-sm.jpg" alt="Picture of Jason Auger" class="profile-pic">
+                    </div>
+                <div class="location"><h2>Utah, United States</h2>
+                <p>__________________________________________________</p>
+                </div>
+                <div class="location-content">
+                    <figure class="flag">
+                        <img src="images/us-flag.jpg" alt="picture of US flag">
+                        <figcaption>Official Flag of the United States</figcaption>
+                    </figure>    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, veritatis dolor non eius labore ipsum 
+                       tempore ducimus quia! Harum architecto repudiandae eius quis non labore ab animi porro a delectus!
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, veritatis dolor non eius labore ipsum 
+                       tempore ducimus quia! Harum architecto repudiandae eius quis non labore ab animi porro a delectus!</p>
+                </div>
+            </section>
+            <section class="card">
+                <div class="card-header"><h3>Web Dev Resources</h3></div>
+                <ul>
+                    <li><a href="https://dev.to/">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                    <li><a href="https://placehold.co/">Image Placeholder</a></li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>©️<span id="currentyear"></span> | Jason Auger | United States</p>
-        <p>Last modification:</p>
+        <p id="footer-title">©️<span id="currentyear"></span> | Jason Auger | United States</p>
+        <p id="lastmodified"></p>
     </footer>
+    </div>
 </body>
 </html>

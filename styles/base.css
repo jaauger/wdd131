@@ -1,0 +1,93 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+header {
+    background-color: rgb(29, 77, 114);
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    color: white;
+}
+nav{
+    background-color: rgb(51, 51, 51);    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.card-holder {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 30px auto;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 5px;    
+}
+.card-header {
+    background-color: rgb(29, 77, 114);
+}
+
+.card h3 {    
+    text-align: center;
+    color: white;
+    margin: 2px;    
+}
+.about-content {
+    margin: 1.5rem 1.5rem 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.profile-pic {
+    float: right;
+    width: 175px;
+    height: auto;
+}
+
+.location {
+    text-align: center;
+}
+
+.location-content {
+    margin: .5rem 13rem 1rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: flex-start;
+    gap: 0rem; 
+}
+
+.flag img {
+    width: 210px;
+    height: auto;
+}
+footer {
+    background-color: rgb(29, 77, 114);
+    text-align: center;
+    color: white;
+}
+
+#footer-title {
+    font-size: 20px;
+}
