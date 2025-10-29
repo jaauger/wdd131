@@ -31,6 +31,15 @@ nav li a {
     text-decoration: none;
 }
 
+hr {
+    margin-top: 0; 
+    border: none;
+    width: 250px;
+    height: 2px;
+    background-color: #ccc;
+       
+}
+
 .card-holder {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -66,8 +75,12 @@ nav li a {
     height: auto;
 }
 
-.location {
+.location p {
+    margin: 0;
+    padding: 0;
     text-align: center;
+    font-size: 1.5rem;
+    
 }
 
 .location-content {
