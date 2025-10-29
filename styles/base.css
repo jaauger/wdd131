@@ -2,7 +2,12 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     height: auto;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    
 }
 
 .container {
@@ -62,7 +67,9 @@ nav ul li a:hover::after,
 nav ul li a:focus::after {
   width: 100%;
 }
-
+main {
+    background-color: white;
+}
 hr {
     margin-top: 0; 
     border: none;
