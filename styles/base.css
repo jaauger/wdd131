@@ -1,5 +1,8 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: auto;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -26,9 +29,38 @@ nav ul {
     justify-content: space-evenly;
 }
 
-nav li a {
-    color: white;
-    text-decoration: none;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: .5rem 1.0rem;
+  display: inline-block;
+  position: relative;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #f4a261; /* warm accent color */
+  transform: translateY(-2px);
+}
+
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0%;
+  height: 2px;
+  background-color: #f4a261;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a:focus::after {
+  width: 100%;
 }
 
 hr {
@@ -62,6 +94,42 @@ hr {
     color: white;
     margin: 2px;    
 }
+
+.card-holder a {
+  display: block;
+  color: rgb(29, 77, 114); 
+  text-decoration: none;
+  margin: 0.4rem 0;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+.card-holder a:hover,
+.card-holder a:focus {
+  color: #f4a261; 
+  background-color: rgba(29, 77, 114, 0.08); 
+  transform: translateX(3px);
+}
+
+
+.card-holder a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 0%;
+  height: 2px;
+  background-color: #f4a261;
+  transition: width 0.3s ease;
+}
+
+.card-holder a:hover::after {
+  width: 100%;
+}
 .about-content {
     margin: 1.5rem 1.5rem 0 1rem;
     display: grid;
@@ -73,6 +141,7 @@ hr {
     float: right;
     width: 175px;
     height: auto;
+    box-shadow: 0 0 30px gray;
 }
 
 .location p {
@@ -94,6 +163,7 @@ hr {
 .flag img {
     width: 210px;
     height: auto;
+    box-shadow: 0 0 30px gray;
 }
 footer {
     background-color: rgb(29, 77, 114);
