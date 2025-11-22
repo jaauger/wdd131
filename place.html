@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Jason Auger Place highlights">
+    <meta name="author" content="Jason Auger">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script> 
+    <title>State of Utah</title>
+</head>
+<body>
+    <header>
+        <h1>Utah, United States</h1>
+    </header>
+    <main class="hero">        
+        <picture> 
+            <source media="(min-width: 800px)" srcset="images/delicate-arch-hero.webp">
+            <img src="images/black-angel.webp" alt="Delicate Arch Utah" class="hero-img">
+        </picture>        
+        <section class="info data">
+            <h2>Data</h2>
+            <ul class="data-list">
+                <li><strong>Area:</strong> 84,900 Sq Miles</li>
+                <li><strong>Population:</strong> 3,506,838</li>
+                <li><strong>Capital:</strong> Salt Lake City</li>
+                <li><strong>Languages:</strong> English</li>
+                <li><strong>Currency:</strong> US Dollar</li>
+                <li><strong>Time Zone:</strong> UTC-7/6</li>
+                <li><strong>Calling Code:</strong> +1</li>
+                <li><strong>Internet TLD:</strong> .us</li>
+            </ul>
+        </section>
+        <hr>
+        <section class="info weather">
+            <h2>Weather ⛅</h2>
+            <img src="images/weather.svg" alt="Weather Icon Image">
+            <ul class="data-list">
+                <li><strong>Temperature:</strong>45°F</li>
+                <li><strong>Conditions:</strong> Mostly Cloudy</li>
+                <li><strong>Wind:</strong>8 mph</li>
+                <li><strong>Wind Chill:</strong><span id="wci"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p id="footer-title">©️<span id="currentyear"></span> | Jason Auger | United States</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
