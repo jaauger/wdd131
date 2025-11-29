@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Jason Auger Product Review Form with Submission">
+    <meta name="author" content="Jason Auger">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
@@ -23,7 +24,7 @@
             <div class="name-email">
                 <div class="form-group">
                     <label for="prod-name">Product Name</label>
-                    <select name="prod-name" id="prod-name" required>
+                    <select name="prod-name" id="prod-name" selected required>
                         <option value="">Select a Product...</option>
                         
                     </select>    
@@ -33,36 +34,36 @@
                 <p>Overall Rating</p>            
                 
                 <div class="radio-box">
-                    <label class="rating-item">
+                    <label for="one-star" class="rating-item">
                     <span>⭐</span>
                     <input type="radio" id="one-star" name="rating" value="1" required>                        
                     </label>
 
-                    <label class="rating-item">
+                    <label for="two-star" class="rating-item">
                     <span>⭐⭐</span>
                     <input type="radio" id="two-star" name="rating" value="2" required>                        
                     </label>
 
-                    <label class="rating-item">
+                    <label for="three-star" class="rating-item">
                     <span>⭐⭐⭐</span>    
-                    <input type="radio" id="three-star" name="rating" value="3">
+                    <input type="radio" id="three-star" name="rating" value="3" required>
                     </label>
 
-                    <label class="rating-item">
+                    <label for="four-star" class="rating-item">
                     <span>⭐⭐⭐⭐</span>
-                    <input type="radio" id="four-star" name="rating" value="4">
+                    <input type="radio" id="four-star" name="rating" value="4" required>
                     </label>
                      
-                    <label class="rating-item">
+                    <label for="five-star" class="rating-item">
                     <span>⭐⭐⭐⭐⭐</span>
-                    <input type="radio" id="five-star" name="rating" value="5">
+                    <input type="radio" id="five-star" name="rating" value="5" required>
                     </label>
                 </div>
             </div>
 
             <div class="install-date">
                 <label for="install-date">Date of Installation</label>                    
-                <input type="date" name="install-date" placeholder="Select a Date..." required>
+                <input type="date" name="install-date" id="install-date" required>
             </div>
             <div class="select-text">
                 <p>Which feature did you find useful in the product?</p>
@@ -88,17 +89,16 @@
             </div>
             <div class="review-box">
                 <label for="review">Written Review<span>(Optional)</span></label>
-                <textarea id="message" name="review" placeholder="Type Here"></textarea>
+                <textarea  name="review" id="review" placeholder="Type Here"></textarea>
             </div>
             <div class="name-box">    
                 <label for="name">Your Name<span>(Optional)</span></label>
                 <input type="text" id="name" name="name" placeholder="Name">
             </div>
             
-            <div class="button-pos"> 
-                <label for="post-button">
-                <button type="submit" name="post-button">Post Review</button>
-                </label>
+            <div class="button-pos">                 
+                <button type="submit" name="post-button" id="post-button">Post Review</button>
+             
             </div>
         </form>
     </main>
