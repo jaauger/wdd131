@@ -1,3 +1,5 @@
+@media (min-width: 200px){
+
 body {
     font-family: "Noto Sans", sans-serif;
     line-height: 1.5;
@@ -128,4 +130,5 @@ footer {
 #lastmodified {
     margin-top: .25rem;
     font-size: 1rem;
+}
 }
