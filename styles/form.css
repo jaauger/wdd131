@@ -1,0 +1,131 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+    line-height: 1.5;
+    background-color: #fafafa;
+    color: #222;
+}
+header {
+  margin: 0 auto;  
+  max-width: 1600px;
+  width: 100%;
+  background-color: rgb(29, 77, 114);
+  color: #fff;
+  text-align: center;
+  padding: .1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+main {
+    height: auto;
+    background-color: #ddd;
+    margin-top: 1rem;
+
+}
+.form-group {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-left: 1rem;  
+    padding-right: 1rem;      
+}
+
+.radio-box-wrapper p {
+    padding-left: 1rem;
+}
+.radio-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}   
+
+.rating-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.install-date {
+    display: grid;
+    grid-template-rows: 1fr 1.25fr;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.select-text {
+    margin-left: 1rem;
+    margin-top: 0;
+}
+
+.select-text p {
+    margin: 0;
+}
+.check-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 1rem;
+}
+
+.review-box {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.name-box {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.button-pos {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;   
+    margin: 0 auto;
+}
+
+button {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 15px;    
+    background-color: rgb(29, 77, 114);
+    border: none;
+    border-radius: .2rem;
+    color: white;
+    cursor: pointer;
+    
+}
+.submitted {
+    font-size: 1.25rem;
+    padding: 1rem;
+    text-align: center;
+}
+footer {
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-color: rgb(29, 77, 114);
+    text-align: center;
+    color: white;
+}
+
+#footer-title {
+    margin-top: .5rem;
+    font-size: 1.5rem;
+}
+
+#lastmodified {
+    margin-top: .25rem;
+    font-size: 1rem;
+}

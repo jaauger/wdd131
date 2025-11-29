@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    line-height: 1.5;
+    background-color: #fafafa;
+    color: #222;
+}
+nav {
+    background-color: #fefbf5;
+    /*border: 1px solid #999; */
+    display: flex;               /* make nav a flex container */
+    align-items: center;         /* vertically center logo + menu */
+    justify-content: space-between; /* push logo left, menu right */
+    padding: 0 1rem;
+}
+
+nav img{
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;                   /* even spacing between items */
+    margin: 0;
+    padding: 0;
+    /*justify-content: space-evenly; */
+}
+
+nav ul li a {
+  color: #555;
+  text-decoration: none;
+  padding: .5rem 1.0rem;
+  display: inline-block;
+  position: relative;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+/* Overlay text container */
+.hero h1,
+.hero p {
+    position: absolute;
+    color: white;            /* change depending on image brightness */
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* Example positions */
+.hero h1 {
+    top: 10%;
+    left: 5%;
+    font-size: 2.5rem;
+}
+
+.hero .tagline {
+    top: 20%;
+    left: 5%;
+    max-width: 400px;
+}
+
+.hero .description {
+    bottom: 5%;
+    left: 5%;
+    max-width: 450px;
+}
+.benefit-tag {
+    margin-top: 2%;
+    margin-left: 5%;
+    
+}
+.card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; 
+        padding: 20px;
+        background-color: #f4f7f6;
+    }
+
+    .card {
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 25px;
+        max-width: 300px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        flex: 1 1 250px; 
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+        
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #2e4053;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        color: #555;
+        line-height: 1.4;
+    }
+
+    footer {
+        background-color: #fefbf5;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "left middle right";
+    }
+
+    .left {
+        grid-area: left;        
+        
+    }
+    .middle {
+        grid-area: middle;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15%;
+    }
+    .right  {
+        grid-area: right;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    .right img {
+        margin-left: 70%;
+    }
+
+    .email-box {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-rows: 1fr ;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+    .email-button {
+        margin: 2% 0% 3% 0%;        
+        gap: 0;                                                                                                                                          
+    }
+    .email-signup {
+        display: flex;
+        align-items: center;
+        margin: 4% 0% 4% 0%;   
+}
+
+    .email-signup input {
+        width: 250px;       
+        padding: 8px;       
+        font-size: 1rem;
+        margin-right: 5px;  
+    }
+
+    .email-signup button {
+        margin-right: 0;
+        padding: 8px 12px;
+        font-size: 1rem;
+        cursor: pointer;
+    }   
+
+    .bottom-para {
+        margin: 0;
+        font-size: .75rem;
+    }
+    footer img {
+        width: 100px;
+        height: auto;
+        float: right;
+    }
+    /* Media query for responsiveness on small screens */
+    @media (max-width: 768px) {
+        .card-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            max-width: 80%;
+        }
+    }
