@@ -1,0 +1,142 @@
+/* -------------------------
+    GLOBAL STYLES
+-------------------------- */
+:root {
+    --gold: #F7B733;
+    --blue: #4A90E2;
+    --slate: #2F2F2F;
+    --lightgray: #F1F3F4;
+
+    --font-main: "Noto Sans", sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background: white;
+    color: var(--slate);
+    line-height: 1.6;
+}
+
+/* -------------------------
+    HEADER
+-------------------------- */
+header {
+    background: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+header .subtitle {
+    opacity: 0.9;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* -------------------------
+    MAIN CONTENT
+-------------------------- */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+    color: var(--blue);
+}
+
+/* -------------------------
+    COLOR SWATCH CARDS
+-------------------------- */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.color-card {
+    padding: 1rem;
+    background: var(--lightgray);
+    border-radius: 6px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.color-block {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.color-block.gold { background: var(--gold); }
+.color-block.blue { background: var(--blue); }
+.color-block.slate { background: var(--slate); }
+.color-block.lightgray { background: var(--lightgray); }
+
+/* -------------------------
+    WIREFRAME IMAGES
+-------------------------- */
+.wireframes {
+    display: grid;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.wireframes figure {
+    text-align: center;
+}
+
+.wireframes img {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--slate);
+}
+
+/* -------------------------
+    LIST STYLES
+-------------------------- */
+ul {
+    padding-left: 1.4rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* -------------------------
+    FOOTER
+-------------------------- */
+footer {
+    background: var(--slate);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
