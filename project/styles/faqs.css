@@ -1,6 +1,4 @@
-/* Updated faqs.css with improved spacing, animation, and mobile support */
 
-/* FAQ CONTAINER LAYOUT */
 main {
     display: grid;
     grid-template-columns: minmax(300px, 800px);
@@ -9,7 +7,6 @@ main {
     gap: 1.5rem;
 }
 
-/* QUESTION BLOCK */
 .question {
     border: 1px solid rgba(0,0,0,0.25);
     border-left: 0.75rem solid #28a745;
@@ -33,7 +30,6 @@ main {
     font-size: 1.2rem;
 }
 
-/* ANSWER BLOCK - ANIMATED */
 .answer {
     padding: 1rem;
     border-left: 0.25rem solid #28a745;
@@ -42,7 +38,6 @@ main {
     margin: 0;
 }
 
-/* When [hidden] is present, the browser hides it */
 .answer[hidden] {
     display: none;
 }
@@ -52,22 +47,21 @@ main {
     line-height: 1.55;
     color: #444;
 }
-/* ICON DEFAULT STATE */
+
 .toggle-icon {
     transition: transform 0.3s ease;
     display: inline-block;
 }
 
-/* ROTATE WHEN OPEN */
 .question.open .toggle-icon {
     transform: rotate(180deg);
 }
-/* LAST ITEM FIX */
+
 #last-question {
     border-bottom: 1px solid rgba(0,0,0,0.25);
 }
 
-/* MOBILE RESPONSIVENESS */
+
 @media (max-width: 600px) {
     .question {
         font-size: 1rem;

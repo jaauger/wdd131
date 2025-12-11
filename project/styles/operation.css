@@ -1,8 +1,4 @@
-/* Updated operation.css with step-card layout */
 
-/* --------------------------- */
-/* SECTION HEADINGS            */
-/* --------------------------- */
 h2 {
     font-size: 1.5rem;
     border-radius: .5rem;
@@ -13,9 +9,7 @@ h2 {
     margin: 1.5rem 0;
 }
 
-/* --------------------------- */
-/* STEP CARD GRID LAYOUT       */
-/* --------------------------- */
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -25,9 +19,6 @@ h2 {
     padding: 1rem;
 }
 
-/* --------------------------- */
-/* STEP CARDS                  */
-/* --------------------------- */
 .step-card {
     background: white;
     border-radius: 10px;
@@ -59,9 +50,6 @@ h2 {
     margin-top: 1rem;
 }
 
-/* --------------------------- */
-/* BATTERY STORAGE SECTION     */
-/* --------------------------- */
 .battery img {
     max-width: 600px;
     width: 100%;
@@ -71,9 +59,7 @@ h2 {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* --------------------------- */
-/* RESPONSIVE TWEAKS           */
-/* --------------------------- */
+
 @media (max-width: 700px) {
     h2 {
         font-size: 1.3rem;

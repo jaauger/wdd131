@@ -1,8 +1,3 @@
-/* Updated benefits.css with responsive layout, consistent styling, and mobile support */
-
-/* --------------------------- */
-/* MAIN GRID LAYOUT (DESKTOP) */
-/* --------------------------- */
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -11,9 +6,6 @@ main {
     justify-items: center;
 }
 
-/* --------------------------- */
-/* CREDIT CARD CONTAINERS     */
-/* --------------------------- */
 .credit-card-container {
     display: flex;
     gap: 20px;
@@ -42,9 +34,6 @@ main {
     border-left-color: #28a745;
 }
 
-/* --------------------------- */
-/* HEADER AREA INSIDE CARDS   */
-/* --------------------------- */
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -77,9 +66,6 @@ main {
     background-color: #dc3545;
 }
 
-/* --------------------------- */
-/* BODY CONTENT INSIDE CARDS  */
-/* --------------------------- */
 .card-body p {
     color: #555;
     line-height: 1.5;
@@ -98,18 +84,12 @@ main {
     line-height: 1.45;
 }
 
-/* --------------------------- */
-/* RESPONSIVE DESIGN          */
-/* --------------------------- */
-
-/* Tablets */
 @media (max-width: 1024px) {
     main {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-/* Mobile phones */
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
@@ -126,7 +106,6 @@ main {
     }
 }
 
-/* Extra small screens */
 @media (max-width: 500px) {
     .credit-card {
         padding: 15px;

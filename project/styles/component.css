@@ -1,8 +1,4 @@
-/* Updated component.css with responsive grid and no global absolute h2 */
 
-/* --------------------------- */
-/* SECTION HEADINGS            */
-/* --------------------------- */
 h2 {
     font-size: 1.5rem;
     border-radius: .5rem;
@@ -14,9 +10,6 @@ h2 {
     position: static;
 }
 
-/* --------------------------- */
-/* SOLAR PANEL SECTION         */
-/* --------------------------- */
 .solar-panel {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -38,9 +31,7 @@ h2 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* --------------------------- */
-/* INVERTER SECTION            */
-/* --------------------------- */
+
 .inverter {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -58,9 +49,7 @@ h2 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* --------------------------- */
-/* MOUNTING SECTION            */
-/* --------------------------- */
+
 .mounting {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -78,9 +67,6 @@ h2 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* --------------------------- */
-/* MONITORING SECTION          */
-/* --------------------------- */
 .monitor {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -103,10 +89,6 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
-/* --------------------------- */
-/* RESPONSIVE BREAKPOINTS     */
-/* --------------------------- */
 
 @media (max-width: 900px) {
     .solar-panel,

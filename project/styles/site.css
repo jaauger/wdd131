@@ -1,4 +1,4 @@
-/* Updated site.css with mobile navigation support */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,6 @@ main {
     flex: 1;
 }
 
-/* Navigation Bar */
 nav {
     background-color: #fefbf5;
     display: flex;
@@ -34,7 +33,7 @@ nav img {
     height: auto;
 }
 
-/* Desktop nav */
+
 nav ul.navigation {
     list-style: none;
     display: flex;
@@ -51,7 +50,7 @@ nav ul.navigation li a {
     transition: all 0.3s ease;
 }
 
-/* Hamburger Button */
+
 #menu-button {
     width: 40px;
     height: 40px;
@@ -64,17 +63,17 @@ nav ul.navigation li a {
     z-index: 9999;
 }
 
-/* Hamburger (default) */
+
 #menu-button {
     background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 100 80' xmlns='http://www.w3.org/2000/svg'><rect width='100' height='12' rx='6'/><rect y='30' width='100' height='12' rx='6'/><rect y='60' width='100' height='12' rx='6'/></svg>");
 }
 
-/* Close icon when menu is open */
+
 #menu-button.open {
     background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><line x1='4' y1='4' x2='20' y2='20' stroke='black' stroke-width='3' stroke-linecap='round'/><line x1='20' y1='4' x2='4' y2='20' stroke='black' stroke-width='3' stroke-linecap='round'/></svg>");
 }
 
-/* Hero Section */
+
 .hero {
     position: relative;
 }
@@ -109,7 +108,7 @@ nav ul.navigation li a {
     max-width: 450px;
 }
 
-/* Benefit cards */
+
 .benefit-tag {
     margin-top: 2%;
     margin-left: 5%;
@@ -158,7 +157,7 @@ nav ul.navigation li a {
     line-height: 1.4;
 }
 
-/* Footer */
+
 footer {
     background-color: #fefbf5;
     display: grid;
@@ -224,20 +223,17 @@ footer img {
     height: auto;
 }
 
-/* ----------------------------- */
-/* MOBILE NAVIGATION — FIXED     */
-/* ----------------------------- */
 
 @media (max-width: 768px) {
 
-    /* SHOW hamburger */
+    
     #menu-button {
         display: block !important;
         visibility: visible !important;
         opacity: 1 !important;
     }
 
-    /* HIDE nav by default */
+    
     nav ul.navigation {
         display: none !important;
         flex-direction: column;
@@ -251,12 +247,12 @@ footer img {
         z-index: 1000;
     }
 
-    /* SHOW when JS toggles .show */
+    
     nav ul.navigation.show {
         display: flex !important;
     }
 
-    /* Hero adjustments */
+ 
     .hero h1,
     .hero p {
         position: static;
@@ -269,7 +265,6 @@ footer img {
         text-align: center;
     }
 
-    /* Footer mobile layout */
     footer {
         grid-template-columns: 1fr;
         text-align: center;
@@ -281,19 +276,17 @@ footer img {
     }
 }
 
-/* ----------------------------- */
-/* DESKTOP OVERRIDES             */
-/* ----------------------------- */
+
 @media (min-width: 768px) {
 
-    /* Hide hamburger */
+    
     #menu-button {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
     }
 
-    /* Show nav fully */
+    
     .navigation {
         display: flex !important;
         flex-direction: row;
