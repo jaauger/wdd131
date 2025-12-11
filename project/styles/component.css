@@ -1,0 +1,144 @@
+/* Updated component.css with responsive grid and no global absolute h2 */
+
+/* --------------------------- */
+/* SECTION HEADINGS            */
+/* --------------------------- */
+h2 {
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    border-left: .5rem solid #28a745;
+    background-color: rgb(254, 251, 245);
+    color: black;
+    margin-bottom: 1rem;
+    position: static;
+}
+
+/* --------------------------- */
+/* SOLAR PANEL SECTION         */
+/* --------------------------- */
+.solar-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2.5rem;
+    gap: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    align-items: start;
+}
+
+.text {
+    margin: 1rem;
+}
+
+.solar-panel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------------------- */
+/* INVERTER SECTION            */
+/* --------------------------- */
+.inverter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2.5rem;
+    gap: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    align-items: start;
+}
+
+.inverter img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------------------- */
+/* MOUNTING SECTION            */
+/* --------------------------- */
+.mounting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2.5rem;
+    gap: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    align-items: start;
+}
+
+.mounting img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------------------- */
+/* MONITORING SECTION          */
+/* --------------------------- */
+.monitor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2.5rem;
+    gap: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    align-items: start;
+}
+
+.dual-img {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+}
+
+.monitor img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------------------- */
+/* RESPONSIVE BREAKPOINTS     */
+/* --------------------------- */
+
+@media (max-width: 900px) {
+    .solar-panel,
+    .inverter,
+    .mounting,
+    .monitor {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .text {
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+
+    .dual-img {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.25rem;
+        padding: .75rem;
+    }
+
+    .solar-panel,
+    .inverter,
+    .mounting,
+    .monitor {
+        margin: 1.25rem;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,143 @@
+/* Updated benefits.css with responsive layout, consistent styling, and mobile support */
+
+/* --------------------------- */
+/* MAIN GRID LAYOUT (DESKTOP) */
+/* --------------------------- */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+}
+
+/* --------------------------- */
+/* CREDIT CARD CONTAINERS     */
+/* --------------------------- */
+.credit-card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.credit-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 450px;
+    border-left: 6px solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.credit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.federal-card {
+    border-left-color: #28a745;
+}
+
+/* --------------------------- */
+/* HEADER AREA INSIDE CARDS   */
+/* --------------------------- */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.status {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.active {
+    background-color: #28a745;
+}
+
+.inactive {
+    background-color: #dc3545;
+}
+
+/* --------------------------- */
+/* BODY CONTENT INSIDE CARDS  */
+/* --------------------------- */
+.card-body p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.card-body ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+    color: #555;
+}
+
+.card-body li {
+    margin-bottom: 10px;
+    line-height: 1.45;
+}
+
+/* --------------------------- */
+/* RESPONSIVE DESIGN          */
+/* --------------------------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .credit-card {
+        max-width: 90%;
+    }
+
+    .card-header h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 500px) {
+    .credit-card {
+        padding: 15px;
+    }
+
+    .card-header h2 {
+        font-size: 1.1rem;
+    }
+
+    .card-body p,
+    .card-body li {
+        font-size: 0.95rem;
+    }
+}

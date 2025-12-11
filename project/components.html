@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Solar Components</title>
 
     <link rel="stylesheet" href="styles/site.css">
-    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/component.css">
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/datas.js" defer></script>     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +18,10 @@
 <body>
     <header>
         <nav>
-            <p>Go Solar Today!</p>
+            <img src="images/sunbeam-logo-sm.png" alt="Sunbeam Logo Image">
             <button type="button" id="menu-button" aria-label="small-menu"></button>
             <ul class="navigation"> 
-                <li><a href="siteplan.html">Home</a></li> 
+                <li><a href="solar.html">Home</a></li> 
                 <li><a href="components.html">System Components</a></li>
                 <li><a href="operation.html">System Operation</a></li>
                 <li><a href="benefits.html">Costs & Benefits</a></li>
@@ -26,21 +29,84 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <p>Solar panels are the stars of the residential solar system, gleaming on the rooftop as they tell the world, or at least the neighborhood, that this homeowner cares enough about the environment to ease the household’s carbon footprint while smartly lowering electric bills. Panels get the glory, but like every star, they wouldn’t be where they are without the supporting cast. In this case, that supporting cast is the critical infrastructure made up of inverters, racking and monitoring systems. These essential parts of your solar power system help make the power useable, connect your system to the roof and let you know how well your system is functioning.
+    <main class="components">
+        <div class="solar-panel"> 
+            <h2>Solar Panels</h2>
+            <p class="text">Solar panels are the stars of the residential solar system, gleaming on the rooftop as they tell the world, or at least the neighborhood, that this homeowner cares enough about the environment to ease the household’s carbon footprint while smartly lowering electric bills. Panels get the glory, but like every star, they wouldn’t be where they are without the supporting cast. In this case, that supporting cast is the critical infrastructure made up of inverters, racking and monitoring systems. These essential parts of your solar power system help make the power useable, connect your system to the roof and let you know how well your system is functioning.</p>
+            <img src="images/monocrystal.webp" alt="Monocrystalline Solar Panel" loading="lazy">
+            <img src="images/polycrystal.webp" alt="Polycrystalline Solar Panel" loading="lazy">
+            
+        </div>
+        <div class="inverter">
+            <h2>Inverters</h2>
+            <p class="text"><strong>Solar Inverters:</strong> From DC to AC Power If not for inverters, solar panels would be relatively useless for homeowners. Once the solar panels have collected sunlight and changed it into DC power, an inverter is needed to convert that electricity into something
+               more useable, notably AC power. Here’s why that matters: DC (direct current) power is low voltage and flows in a single direction. AC (alternating current) power moves both forward and backward along a wire, can change between high and low voltage and can 
+               more easily be sent long distances over wires. Solar panels make DC power. Most U.S. homes and businesses run on AC power. Thus, the inverter – or inverters, depending on what a homeowner chooses for his solar system.
+            </p>
+            <img src="images/inverter-infograph.png" alt="Inverter Images" loading="lazy">
+        </div>
+        <div class="mounting">
+            <h2>Mounting</h2>
+            <p class="text">Solar Mounting Systems: Maximizing Energy Production No matter the weather, your solar panels need to stay solidly on your roof.
+               That’s where the solar panel mounting system comes in.
+            </p>
+            <img src="images/mounting-infograph.png" alt="Mounting system" loading="lazy">
+            
+        </div>
+        <div class="monitor">
+            <h2>Monitoring</h2>
+            <p class="text">Monitoring Your Solar Panels Performance Solar panels silently go about their business of gathering sunlight and producing energy, which makes it hard to tell how effectively they are working. If a panel on your string inverter gets shaded, the entire string will be affected and won’t produce the energy you were expecting. Unless you want to wait until your utility bill gives you the bad news, a monitoring system can be invaluable. Monitoring systems help you to measure and track how much electricity your system is producing and identify and promptly fix any performance issues so that you are maximizing the production of electricity from your solar system.
+            </p>
+            <div class="dual-img">
+                <img src="images/solar-generation.png" alt="System monitoring" loading="lazy">
+                <img src="images/energy-consumption.png" alt="Energy consumption" loading="lazy">
+            </div>
+        </div>    
+    </main>
+    <footer role="contentinfo">        
+        <form action="#" method="post" aria-label="Email signup form">
+            <div class="email-box left"> 
+                <p>Stay Up To Date</p>   
 
-        </p>
-        <p>Solar Inverters: From DC to AC Power If not for inverters, solar panels would be relatively useless for homeowners. Once the solar panels have collected sunlight and changed it into DC power, an inverter is needed to convert that electricity into something
-           more useable, notably AC power. Here’s why that matters: DC (direct current) power is low voltage and flows in a single direction. AC (alternating current) power moves both forward and backward along a wire, can change between high and low voltage and can 
-           more easily be sent long distances over wires. Solar panels make DC power. Most U.S. homes and businesses run on AC power. Thus, the inverter – or inverters, depending on what a homeowner chooses for his solar system.
-        </p>
-        <p>Solar Mounting Systems: Maximizing Energy Production No matter the weather, your solar panels need to stay solidly on your roof.
-           That’s where the solar panel mounting system comes in.
-        </p>
-        <p>Monitoring Your Solar Panels Performance Solar panels silently go about their business of gathering sunlight and producing energy, which makes it hard to tell how effectively they are working. If a panel on your string inverter gets shaded, the entire string will be affected and won’t produce the energy you were expecting. Unless you want to wait until your utility bill gives you the bad news, a monitoring system can be invaluable. Monitoring systems help you to measure and track how much electricity your system is producing and identify and promptly fix any performance issues so that you are maximizing the production of electricity from your solar system.
+                <div class="email-signup">
+                    <label for="email" class="visually-hidden">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required aria-required="true">
 
-        </p>
-        </main>
-    <footer></footer>
+                    <button type="submit" id="post-button" aria-label="Submit email">&gt;</button>
+                </div>
+
+                <div class="bottom-para">
+                    <p>Stay up-to-date with solar.</p>
+                    <p>Join our email list to receive the quarterly newsletter.</p>
+                </div>
+            </div>
+        </form>
+        <section class="middle" aria-label="Social Media Links" role="navigation">
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+                <!-- Facebook SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true">
+                    <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24h-1.92c-1.504 0-1.797.715-1.797 1.764v2.314h3.587l-.467 3.622h-3.12V24h6.117C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+                </svg>
+            </a>
+
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter/X" class="social-icon">
+                <!-- X (Twitter) SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true" style="background:black; border-radius:4px;">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26L24 21.75h-6.563l-5.144-6.727-5.917 6.727H3.068l7.73-8.787L0 2.25h6.75l4.708 6.063L18.244 2.25z"/>
+                </svg>
+            </a>
+
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+                <!-- Instagram SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#E1306C" aria-hidden="true">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.97.24 2.427.403a4.92 4.92 0 011.75 1.145 4.92 4.92 0 011.145 1.75c.163.457.347 1.257.403 2.427.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.403 2.427a4.92 4.92 0 01-1.145 1.75 4.92 4.92 0 01-1.75 1.145c-.457.163-1.257.347-2.427.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.427-.403a4.92 4.92 0 01-1.75-1.145 4.92 4.92 0 01-1.145-1.75c-.163-.457-.347-1.257-.403-2.427C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.056-1.17.24-1.97.403-2.427A4.92 4.92 0 013.781 2.973 4.92 4.92 0 015.531 1.828c.457-.163 1.257-.347 2.427-.403C9.224 2.175 9.604 2.163 12 2.163zm0 3.675a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm7.2-.405a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
+                </svg>
+            </a>
+        </section>
+        <div class="right">            
+            <img src="images/sunbeam-logo-sm.png" alt="Sunbeam Logo Image">
+            <p>Copyright© 2025 Sunbeam Home Solar Guide. All Rights Reserved</p>
+        </div>    
+    </footer>
 </body>
 </html>

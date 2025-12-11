@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Solar Benefits</title>
 
     <link rel="stylesheet" href="styles/site.css">
-    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/benefits.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/datas.js" defer></script>
+     
 </head>
 <body>
     <header>
         <nav>
-            <p>Go Solar Today!</p>
+            <img src="images/sunbeam-logo-sm.png" alt="Sunbeam Logo Image">
             <button type="button" id="menu-button" aria-label="small-menu"></button>
             <ul class="navigation"> 
-                <li><a href="siteplan.html">Home</a></li> 
+                <li><a href="solar.html">Home</a></li> 
                 <li><a href="components.html">System Components</a></li>
                 <li><a href="operation.html">System Operation</a></li>
                 <li><a href="benefits.html">Costs & Benefits</a></li>
@@ -27,20 +31,103 @@
         </nav>
     </header>
     <main>
-        <p>System Cost:
-        A typical residential solar system can range from $10,000–$25,000 depending on size, equipment, and location. Costs can be reduced through federal and state incentives.
-        </p>
-        <p>Long-Term Savings:             
-        Many homeowners see a dramatic reduction in electricity bills and often reach a break-even point within 6–10 years.
-        </p>
-        <p>Federal Tax Credit:
-        Homeowners may qualify for a significant tax credit when installing solar (percentage varies by year).
-        </p>
-        <p>State or Utility Incentives:
-        Some states offer rebates, property tax reductions, or net metering benefits.
-        </p>
+    <div class="credit-card-container">
+        <div class="credit-card federal-card">
+            <div class="card-header">
+                <h2>Federal Solar Tax Credit</h2>
+                <span class="status active">Active (30%)</span>
+            </div>
+          
+        <div class="card-body">
+            <p>Officially known as the **Residential Clean Energy Credit**, this incentive is a dollar-for-dollar reduction in your federal income taxes owed.</p>
+            <ul>
+                <li>**Credit Amount:** 30% of total system cost (no maximum limit).</li>
+                <li>**Eligibility:** Systems installed and placed in service by the end of 2025 qualify for the 30% rate. The credit is available for primary or secondary U.S. residences.</li>
+                <li>**How to Claim:** File [IRS Form 5695]() with your federal tax return. Keep all receipts and manufacturer certifications.</li>
+                <li>**Important Note:** The credit is nonrefundable but can be carried forward to future tax years if it exceeds your tax liability.</li>
+            </ul>
+        </div>
+        </div>
+    </div>  
+
+    <div class="credit-card-container"> 
+        <div class="credit-card federal-card">
+            <div class="card-header">  
+                <h2>System Cost:</h2>
+            </div> 
+
+        <div class="card-body"></div>       
+            <p>The costs of a typical residential solar system can can be broken down into the following:</p>
+            <ul>
+                <li>Solar Panels, Inverters & Hardware (~ $2.50–$3.50 per watt) — For a typical residential system, this works out to roughly $15,000–$25,000 before incentives. 
+                <li>Average System Cost for a Medium-Size Home (~ 6–8 kW) — A 6 kW–8 kW system typically costs around $16,800–$26,400 before incentives. 
+                <li>Installation Labor, Permits & Soft Costs — These non-equipment costs (labor, permitting, mounting, wiring, etc.) are built into the per-watt pricing and typically represent a significant portion of the total; smaller or more complex installs may increase soft costs per watt. 
+                <li>Net Cost After Incentives — With typical incentives (for example, the federal tax credit), many homeowners pay significantly less than the sticker price: this makes the upfront cost more manageable compared to the pre-incentive amount. 
+            </ul>
+        </div>        
+    </div>     
+
+    <div class="credit-card-container"> 
+        <div class="credit-card federal-card">
+            <div class="card-header">  
+                <h2>Long-Term Savings:</h2>             
+            </div>
+        <div class="card-body">
+            <p>Many homeowners see a dramatic reduction in electricity bills and often reach a break-even point within 6–10 years.</p>       
+            <ul>
+                <li>Reduce Your Monthly Utility Bill — Lower or eliminate electricity costs for 25+ years.</li>
+                <li>Lock In Predictable Energy Prices — Avoid rising utility rates with stable solar energy costs.</li>
+                <li>Increase Home Value — Solar-equipped homes often sell for more and attract more buyers.</li>
+                <li>Earn Credits Through Net Metering — Get credit for excess energy your system sends back to the grid.</li>
+            </ul>
+        </div>        
+    </div>         
 
     </main>
-    <footer></footer>
+    <footer role="contentinfo">        
+        <form action="#" method="post" aria-label="Email signup form">
+            <div class="email-box left"> 
+                <p>Stay Up To Date</p>   
+
+                <div class="email-signup">
+                    <label for="email" class="visually-hidden">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required aria-required="true">
+
+                    <button type="submit" id="post-button" aria-label="Submit email">&gt;</button>
+                </div>
+
+                <div class="bottom-para">
+                    <p>Stay up-to-date with solar.</p>
+                    <p>Join our email list to receive the quarterly newsletter.</p>
+                </div>
+            </div>
+        </form>
+        <section class="middle" aria-label="Social Media Links" role="navigation">
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+                <!-- Facebook SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true">
+                    <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24h-1.92c-1.504 0-1.797.715-1.797 1.764v2.314h3.587l-.467 3.622h-3.12V24h6.117C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+                </svg>
+            </a>
+
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter/X" class="social-icon">
+                <!-- X (Twitter) SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true" style="background:black; border-radius:4px;">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26L24 21.75h-6.563l-5.144-6.727-5.917 6.727H3.068l7.73-8.787L0 2.25h6.75l4.708 6.063L18.244 2.25z"/>
+                </svg>
+            </a>
+
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+                <!-- Instagram SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#E1306C" aria-hidden="true">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.97.24 2.427.403a4.92 4.92 0 011.75 1.145 4.92 4.92 0 011.145 1.75c.163.457.347 1.257.403 2.427.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.403 2.427a4.92 4.92 0 01-1.145 1.75 4.92 4.92 0 01-1.75 1.145c-.457.163-1.257.347-2.427.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.427-.403a4.92 4.92 0 01-1.75-1.145 4.92 4.92 0 01-1.145-1.75c-.163-.457-.347-1.257-.403-2.427C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.056-1.17.24-1.97.403-2.427A4.92 4.92 0 013.781 2.973 4.92 4.92 0 015.531 1.828c.457-.163 1.257-.347 2.427-.403C9.224 2.175 9.604 2.163 12 2.163zm0 3.675a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm7.2-.405a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
+                </svg>
+            </a>
+        </section>
+        <div class="right">            
+            <img src="images/sunbeam-logo-sm.png" alt="Sunbeam Logo Image">
+            <p>Copyright© 2025 Sunbeam Home Solar Guide. All Rights Reserved</p>
+        </div>    
+    </footer>
 </body>
 </html>
